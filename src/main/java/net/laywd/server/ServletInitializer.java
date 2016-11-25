@@ -1,4 +1,4 @@
-package net.laywd;
+package net.laywd.server;
 
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.web.support.SpringBootServletInitializer;
