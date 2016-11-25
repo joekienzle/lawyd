@@ -1,6 +1,8 @@
 package net.lawyd.server;
 
 import com.google.common.base.Strings;
+import net.lawyd.server.persistence.Todo;
+import net.lawyd.server.service.TodoService;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -11,7 +13,7 @@ import static org.junit.Assert.*;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
-public class LawydServerApplicationTests {
+public class ServiceTests {
 
 	@Autowired
 	private TodoService todoService;
