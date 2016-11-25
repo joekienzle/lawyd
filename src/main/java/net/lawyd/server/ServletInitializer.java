@@ -1,4 +1,4 @@
-package net.laywd.server;
+package net.lawyd.server;
 
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.web.support.SpringBootServletInitializer;
@@ -7,7 +7,7 @@ public class ServletInitializer extends SpringBootServletInitializer {
 
 	@Override
 	protected SpringApplicationBuilder configure(SpringApplicationBuilder application) {
-		return application.sources(LaywdServerApplication.class);
+		return application.sources(LawydServerApplication.class);
 	}
 
 }

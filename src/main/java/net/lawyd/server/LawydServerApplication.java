@@ -1,12 +1,12 @@
-package net.laywd.server;
+package net.lawyd.server;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class LaywdServerApplication {
+public class LawydServerApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(LaywdServerApplication.class, args);
+		SpringApplication.run(LawydServerApplication.class, args);
 	}
 }
