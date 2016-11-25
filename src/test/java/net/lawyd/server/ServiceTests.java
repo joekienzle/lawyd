@@ -11,7 +11,7 @@ import static org.junit.Assert.*;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
-public class LawydServerApplicationTests {
+public class ServiceTests {
 
 	@Autowired
 	private TodoService todoService;
