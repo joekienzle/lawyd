@@ -21,7 +21,7 @@ import javax.sql.DataSource;
 @EnableTransactionManagement
 public class SpringConfig {
 
-    static final String PACKAGE_PATH = "net.lawyd.server";
+    public static final String PACKAGE_PATH = "net.lawyd.server";
 
     @Value("${db.showSql:false}")
     private Boolean showSql;
