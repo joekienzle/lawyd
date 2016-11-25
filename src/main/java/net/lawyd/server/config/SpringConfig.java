@@ -1,4 +1,4 @@
-package net.lawyd.server;
+package net.lawyd.server.config;
 
 import org.apache.commons.dbcp2.BasicDataSource;
 import org.springframework.beans.factory.annotation.Value;

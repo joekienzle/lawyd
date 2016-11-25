@@ -1,4 +1,4 @@
-package net.lawyd.server;
+package net.lawyd.server.persistence;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 

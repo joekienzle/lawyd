@@ -1,4 +1,4 @@
-package net.lawyd.server;
+package net.lawyd.server.rest;
 
 import org.springframework.stereotype.Controller;
 

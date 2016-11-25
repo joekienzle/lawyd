@@ -1,6 +1,8 @@
 package net.lawyd.server;
 
 import com.google.common.base.Strings;
+import net.lawyd.server.persistence.Todo;
+import net.lawyd.server.service.TodoService;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;

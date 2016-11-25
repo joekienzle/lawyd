@@ -1,5 +1,6 @@
-package net.lawyd.server;
+package net.lawyd.server.config;
 
+import net.lawyd.server.rest.TodoResource;
 import org.glassfish.jersey.server.ResourceConfig;
 import org.springframework.stereotype.Component;
 
