@@ -1,6 +1,6 @@
 # lawyd
 
-![](https://raw.githubusercontent.com/joekienzle/lawyd/master/logo.png "laywd")
+![](https://raw.githubusercontent.com/joekienzle/lawyd/master/logo.png "lawyd")
 
 [![Build Status](https://travis-ci.org/joekienzle/lawyd.svg?branch=master)](https://travis-ci.org/joekienzle/lawyd)
 [![license](https://img.shields.io/github/license/mashape/apistatus.svg)](https://github.com/joekienzle/lawyd/blob/master/LICENSE)
