@@ -30,9 +30,9 @@ public class RestTest {
     public void getEmptyTodo() throws Exception {
         given().
                 accept(MediaType.APPLICATION_JSON).
-        when().
+                when().
                 get().
-        then().
+                then().
                 statusCode(Response.Status.OK.getStatusCode());
     }
 }
