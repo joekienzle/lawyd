@@ -8,7 +8,7 @@ import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 
 @Controller
-@Path("api/todo")
+@Path("todo")
 public class TodoResource {
 
     @GET
