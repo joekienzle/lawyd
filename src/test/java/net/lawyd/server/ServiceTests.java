@@ -3,6 +3,7 @@ package net.lawyd.server;
 import com.google.common.base.Strings;
 import net.lawyd.server.persistence.Todo;
 import net.lawyd.server.service.TodoService;
+import net.lawyd.server.service.exception.NotFoundException;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -57,7 +58,13 @@ public class ServiceTests {
         todoService.deleteTodoById(todoId);
 
         assertEquals(initalNumberTodods, getNumberOfTodos());
-        assertNull(todoService.findTodoById(todoId));
+        boolean exceptionOccured = false;
+        try {
+            todoService.findTodoById(todoId);
+        } catch (NotFoundException e) {
+            exceptionOccured = true;
+        }
+        assertTrue("There should have been an exception", exceptionOccured);
     }
 
     private int getNumberOfTodos() {
