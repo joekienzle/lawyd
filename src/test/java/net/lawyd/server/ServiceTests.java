@@ -30,7 +30,7 @@ public class ServiceTests {
         todoTransient.setName(name);
         todoTransient.setDescription(description);
         todoTransient.setPriority(priority);
-        Todo todoTemp = todoService.saveTodo(todoTransient);
+        Todo todoTemp = todoService.createTodo(todoTransient);
 
         assertEquals(initalNumberTodods + 1, getNumberOfTodos());
         assertNotNull(todoTemp);
@@ -45,7 +45,7 @@ public class ServiceTests {
 
         String updatedName = "My updated Todo";
         todoLoaded.setName(updatedName);
-        Todo todoUpdated = todoService.saveTodo(todoLoaded);
+        Todo todoUpdated = todoService.createTodo(todoLoaded);
 
         assertEquals(initalNumberTodods + 1, getNumberOfTodos());
         assertNotNull(todoUpdated);
