@@ -6,7 +6,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 public class LawydServerApplication {
 
-	public static void main(String[] args) {
-		SpringApplication.run(LawydServerApplication.class, args);
-	}
+    public static void main(String[] args) {
+        SpringApplication.run(LawydServerApplication.class, args);
+    }
+
 }
