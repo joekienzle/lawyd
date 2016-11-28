@@ -11,9 +11,9 @@ import javax.persistence.Id;
 public class Todo {
 
     @Id
-    @Column(name="todoId")
-    @GeneratedValue(generator="hibernate-uuid")
-    @GenericGenerator(name="hibernate-uuid", strategy = "uuid2")
+    @Column(name = "todoId")
+    @GeneratedValue(generator = "hibernate-uuid")
+    @GenericGenerator(name = "hibernate-uuid", strategy = "uuid2")
     private String id;
 
     private String name;
