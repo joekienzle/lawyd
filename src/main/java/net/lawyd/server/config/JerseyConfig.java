@@ -3,9 +3,9 @@ package net.lawyd.server.config;
 import net.lawyd.server.rest.HealthResource;
 import net.lawyd.server.rest.TodoResource;
 import org.glassfish.jersey.server.ResourceConfig;
-import org.springframework.stereotype.Component;
+import org.springframework.context.annotation.Configuration;
 
-@Component
+@Configuration
 public class JerseyConfig extends ResourceConfig {
 
     public JerseyConfig() {
