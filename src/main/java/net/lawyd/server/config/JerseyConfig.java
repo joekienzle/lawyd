@@ -3,9 +3,9 @@ package net.lawyd.server.config;
 import net.lawyd.server.rest.HealthResource;
 import net.lawyd.server.rest.TodoResource;
 import org.glassfish.jersey.server.ResourceConfig;
-import org.springframework.context.annotation.Configuration;
+import org.springframework.boot.SpringBootConfiguration;
 
-@Configuration
+@SpringBootConfiguration
 public class JerseyConfig extends ResourceConfig {
 
     public JerseyConfig() {
