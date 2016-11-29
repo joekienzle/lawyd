@@ -7,7 +7,7 @@ import com.vaadin.ui.Button;
 import com.vaadin.ui.Notification;
 import com.vaadin.ui.UI;
 
-@SpringUI(path = "/ui")
+@SpringUI
 @Theme("valo")
 public class VaadinUI extends UI {
 
