@@ -58,7 +58,7 @@ public class TodoView extends VerticalLayout implements View {
         todoGrid.getEditorFieldGroup().addCommitHandler(new FieldGroup.CommitHandler() {
             @Override
             public void preCommit(FieldGroup.CommitEvent commitEvent) throws FieldGroup.CommitException {
-
+                // Nothing to do here
             }
 
             @Override
@@ -97,18 +97,16 @@ public class TodoView extends VerticalLayout implements View {
         summaryNameField.addFocusListener(event -> summaryNameField.addShortcutListener(shortcut));
         summaryNameField.addBlurListener(event -> summaryNameField.removeShortcutListener(shortcut));
 
-        deleteButton = new Button("Löschen", event -> {
-            ConfirmDialog.show(UI.getCurrent(), "Löschen bestätigen", "Wollen sie den ausgewählten Todo wirklich löschen?", "Ja", "Nein", confirmDialog -> {
-                if (confirmDialog.isConfirmed()) {
-                    String selectedId = (String) todoGrid.getSelectedRow();
-                    if (!Strings.isNullOrEmpty(selectedId)) {
-                        todoService.deleteTodoById(selectedId);
-                        todoGrid.deselect(selectedId);
-                        reloadData();
-                    }
+        deleteButton = new Button("Löschen", event -> ConfirmDialog.show(UI.getCurrent(), "Löschen bestätigen", "Wollen sie den ausgewählten Todo wirklich löschen?", "Ja", "Nein", confirmDialog -> {
+            if (confirmDialog.isConfirmed()) {
+                String selectedId = (String) todoGrid.getSelectedRow();
+                if (!Strings.isNullOrEmpty(selectedId)) {
+                    todoService.deleteTodoById(selectedId);
+                    todoGrid.deselect(selectedId);
+                    reloadData();
                 }
-            });
-        });
+            }
+        }));
         deleteButton.setIcon(FontAwesome.MINUS);
         deleteButton.setEnabled(false);
     }
