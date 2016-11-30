@@ -31,7 +31,7 @@ public class RestTest {
 
     @Before
     public void setUp() {
-        RestAssured.basePath = "/api/todo";
+        RestAssured.basePath = "/todo";
         RestAssured.port = port;
     }
 
