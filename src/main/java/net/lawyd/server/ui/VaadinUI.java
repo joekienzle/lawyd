@@ -8,7 +8,7 @@ import com.vaadin.spring.navigator.SpringViewProvider;
 import com.vaadin.ui.UI;
 import org.springframework.beans.factory.annotation.Autowired;
 
-@SpringUI
+@SpringUI(path = "/ui")
 @Theme("valo")
 public class VaadinUI extends UI {
 
