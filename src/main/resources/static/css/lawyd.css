@@ -12,6 +12,14 @@
   margin-top: 5px;
 }
 
+.do-list-header {
+  color: #00216B;
+}
+
+.done-list-header {
+  color: #02DE00;
+}
+
 .todo-action {
   color: black;
   padding-left: 10px;

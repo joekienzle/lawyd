@@ -34,14 +34,15 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <img src="img/logo.png" class="logo"/>
-        <div class="navbar-brand" href="#">
-          <div class="lawyd-header">lawyd</div>
-        </div>
+        <a href="#"><img src="img/logo.png" class="logo"/></a>
+        <a class="navbar-brand" href="#">
+          <span class="do-list-header">Lawyd</span>
+        </a>
       </div>
       <div id="navbar" class="navbar-collapse collapse ">
         <ul class="nav navbar-nav navbar-left">
           <li><a href="#do-list">Do list</a></li>
+          <li><a href="#done-list">Done list</a></li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
           <li><a href="#about">About</a></li>
@@ -50,69 +51,81 @@
     </div>
   </nav>
 
-  <div id="do-list">
-    <h3>Do list <small>Things you need to do</small></h3>
-    <div class="list-group">
-      <div class="list-group-item">Todo 1
-        <a role="button" href="#"><span class="glyphicon glyphicon-ok pull-right todo-action"
-                                        aria-hidden="true"></span></a>
-        <a role="button" href="#"><span class="glyphicon glyphicon-trash pull-right todo-action"
-                                        aria-hidden="true"></span></a>
-        <a role="button" href="#"><span class="glyphicon glyphicon-pencil pull-right todo-action"
-                                        aria-hidden="true"></span></a>
+  <div class="row">
+    <div class="col-md-6" id="do-list">
+      <h3 class="do-list-header">Do list
+        <small>These are to do</small>
+      </h3>
+      <div class="list-group">
+        <div class="list-group-item">Todo 6
+          <a role="button" href="#"><span class="glyphicon glyphicon-ok pull-right todo-action"
+                                          aria-hidden="true"></span></a>
+          <a role="button" href="#"><span class="glyphicon glyphicon-trash pull-right todo-action"
+                                          aria-hidden="true"></span></a>
+          <a role="button" href="#"><span class="glyphicon glyphicon-pencil pull-right todo-action"
+                                          aria-hidden="true"></span></a>
+        </div>
+        <div class="list-group-item">Todo 7
+          <a role="button" href="#"><span class="glyphicon glyphicon-ok pull-right todo-action"
+                                          aria-hidden="true"></span></a>
+          <a role="button" href="#"><span class="glyphicon glyphicon-trash pull-right todo-action"
+                                          aria-hidden="true"></span></a>
+          <a role="button" href="#"><span class="glyphicon glyphicon-pencil pull-right todo-action"
+                                          aria-hidden="true"></span></a>
+        </div>
+        <div class="list-group-item">Todo 8
+          <a role="button" href="#"><span class="glyphicon glyphicon-ok pull-right todo-action"
+                                          aria-hidden="true"></span></a>
+          <a role="button" href="#"><span class="glyphicon glyphicon-trash pull-right todo-action"
+                                          aria-hidden="true"></span></a>
+          <a role="button" href="#"><span class="glyphicon glyphicon-pencil pull-right todo-action"
+                                          aria-hidden="true"></span></a>
+        </div>
       </div>
-      <div class="list-group-item">Todo 2
-        <a role="button" href="#"><span class="glyphicon glyphicon-ok pull-right todo-action"
-                                        aria-hidden="true"></span></a>
-        <a role="button" href="#"><span class="glyphicon glyphicon-trash pull-right todo-action"
-                                        aria-hidden="true"></span></a>
-        <a role="button" href="#"><span class="glyphicon glyphicon-pencil pull-right todo-action"
-                                        aria-hidden="true"></span></a>
-      </div>
-      <div class="list-group-item">Todo 3
-        <a role="button" href="#"><span class="glyphicon glyphicon-ok pull-right todo-action"
-                                        aria-hidden="true"></span></a>
-        <a role="button" href="#"><span class="glyphicon glyphicon-trash pull-right todo-action"
-                                        aria-hidden="true"></span></a>
-        <a role="button" href="#"><span class="glyphicon glyphicon-pencil pull-right todo-action"
-                                        aria-hidden="true"></span></a>
-      </div>
-      <div class="list-group-item">Todo 4
-        <a role="button" href="#"><span class="glyphicon glyphicon-ok pull-right todo-action"
-                                        aria-hidden="true"></span></a>
-        <a role="button" href="#"><span class="glyphicon glyphicon-trash pull-right todo-action"
-                                        aria-hidden="true"></span></a>
-        <a role="button" href="#"><span class="glyphicon glyphicon-pencil pull-right todo-action"
-                                        aria-hidden="true"></span></a>
-      </div>
-      <div class="list-group-item">Todo 5
-        <a role="button" href="#"><span class="glyphicon glyphicon-ok pull-right todo-action"
-                                        aria-hidden="true"></span></a>
-        <a role="button" href="#"><span class="glyphicon glyphicon-trash pull-right todo-action"
-                                        aria-hidden="true"></span></a>
-        <a role="button" href="#"><span class="glyphicon glyphicon-pencil pull-right todo-action"
-                                        aria-hidden="true"></span></a>
+      <form>
+        <div class="form-group" id="new-todo-form">
+          <input type="text" class="form-control" id="todo-name" placeholder="My new thing to do"/>
+          <button type="submit" class="btn btn-default">Add <span
+              class="glyphicon glyphicon-plus pull-right todo-action"></span></button>
+        </div>
+      </form>
+    </div>
+
+    <div class="col-md-6" id="done-list">
+      <h3 class="done-list-header">Done list
+        <small>These are done. Awesome!</small>
+      </h3>
+      <div class="list-group">
+        <div class="list-group-item">Todo 1
+          <a role="button" href="#"><span class="glyphicon glyphicon-trash pull-right todo-action"
+                                          aria-hidden="true"></span></a>
+        </div>
+        <div class="list-group-item">Todo 2
+          <a role="button" href="#"><span class="glyphicon glyphicon-trash pull-right todo-action"
+                                          aria-hidden="true"></span></a>
+        </div>
+        <div class="list-group-item">Todo 3
+          <a role="button" href="#"><span class="glyphicon glyphicon-trash pull-right todo-action"
+                                          aria-hidden="true"></span></a>
+        </div>
+        <div class="list-group-item">Todo 4
+          <a role="button" href="#"><span class="glyphicon glyphicon-trash pull-right todo-action"
+                                          aria-hidden="true"></span></a>
+        </div>
+        <div class="list-group-item">Todo 5
+          <a role="button" href="#"><span class="glyphicon glyphicon-trash pull-right todo-action"
+                                          aria-hidden="true"></span></a>
+        </div>
       </div>
     </div>
   </div>
 
-  <form>
-    <div class="form-group" id="new-todo-form">
-      <input type="text" class="form-control" id="todo-name" placeholder="My new thing to do"/>
-      <button type="submit" class="btn btn-default">Add <span
-          class="glyphicon glyphicon-plus pull-right todo-action"></span></button>
-    </div>
-  </form>
-
   <p>
-  <h3 id="about">About</h3>
-  <p>Working off a nasty, long todo list. Nobody likes it.
-    It's not rewarding and at the end of the day there are still too many
-    things left open. That why we try to make it more pleasent,
-    by not making the things simply disapear, but rather collecting them in
-    a separate list. Besides the usual long list of open things,
-    there is a list of things you have done to show you how awesome you are
-    and how much you have rocked today.
+  <h3 id="about">About Lawyd</h3>
+  <p>Working off a nasty, long todo list is not rewarding in itself and at the end of the day there are still too
+    many things left open. That is why we try to make it more pleasant, by not making the things simply disappear, but
+    rather collecting them in a separate list. Besides the usual list of things to do, there is a list of things you
+    have done to show you how awesome you are and how much you have rocked today.
   </p>
   </p>
 
