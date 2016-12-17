@@ -3,3 +3,16 @@
   margin-top: 3px;
   margin-bottom: 3px;
 }
+
+.lawyd-header {
+  color: #00216B;
+}
+
+.navbar-lawyd {
+  margin-top: 5px;
+}
+
+.todo-action {
+  color: black;
+  padding-left: 10px;
+}
